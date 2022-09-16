@@ -1,9 +1,9 @@
 {
   "name": "Lightweight Topic Container",
   "component": true,
-  "license_url": null,
-  "about_url": null,
-  "authors": null,
+  "license_url": "https://github.com/t1-tracey/discourse-lightweight-topic-container/blob/main/LICENSE",
+  "about_url": "https://github.com/t1-tracey/discourse-lightweight-topic-container",
+  "authors": "github.com/t1-tracey",
   "theme_version": null,
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
