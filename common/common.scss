@@ -1,7 +1,4 @@
-// Hide views column
-.topic-list .views {
-    display:none;
-}
+// Thanks to awesomerobot and jsthon for tips from Graceful theme
 
 @mixin box-shadow($value: 8px) {
     @media (prefers-color-scheme: light) {
