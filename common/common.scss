@@ -1,0 +1,51 @@
+// Hide views column
+.topic-list .views {
+    display:none;
+}
+
+@mixin box-shadow($value: 8px) {
+    @media (prefers-color-scheme: light) {
+      box-shadow: 0 1px $value rgba(black, 0.18);
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      box-shadow: 0 1px $value rgba(white, 0.18);
+    }
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  @media (prefers-color-scheme: light) {
+    background: linear-gradient(180deg, var(--header_primary-high) 0%, rgba(137, 160, 210, 0.7) 100%);
+  }
+  @media (prefers-color-scheme: dark) {
+    background: linear-gradient(180deg, rgba(16, 16, 32, 1) 0%, rgba(69, 80, 105, 0.7) 100%);
+  }
+}
+
+.topic-list-body {
+  border-width: 1px;
+}
+
+#main-outlet {
+  box-sizing: border-box;
+  margin: 30px auto;
+  background: var(--secondary);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 980px;
+  padding: 3em 3em 5%;
+  .archetype-regular & {
+    min-height: 500px;
+  }
+  @media screen and (max-width: 775px) {
+    padding: 1.5em;
+  }
+  padding-bottom: 5% !important; //overriding inline style
+  @include box-shadow;
+}
