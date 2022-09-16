@@ -1,3 +1,7 @@
-background-color:
+background-color-light:
   default: "#FFFFFF"
+  type: string
+
+background-color-dark:
+  default: "#000000"
   type: string
