@@ -2,4 +2,5 @@ en:
   theme_metadata:
     description: "Lightweight outline for the main container in Discourse e.g. topic list container"
     settings:
-      background-color: "Set a background color e.g. #FFFFFF"
+      background-color-light: "Set a background color for light mode e.g. #FFFFFF"
+      background-color-dark: "Set a background color for dark mode e.g. #000000"
